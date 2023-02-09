@@ -1,2 +1,4 @@
 linux:
-  installs: curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+  installs: wget https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install -O /tmp/omf-install && chmod +x /tmp/omf-install && /tmp/omf-install --noninteractive --yes
+  depends:
+    - fish
