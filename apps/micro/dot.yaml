@@ -1,2 +1,2 @@
 linux:
-  installs: yay -S micro
+  installs: yay -S --noconfirm --needed micro
