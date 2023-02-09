@@ -1,0 +1,2 @@
+linux:
+  installs: yay -S {{ name }}
