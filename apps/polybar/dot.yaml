@@ -1,0 +1,6 @@
+linux:
+  installs: yay -S --noconfirm --needed polybar
+  links:
+    launch.sh: ~/.config/polybar/launch.sh
+    themes: ~/.config/polybar/themes
+    scripts: ~/.config/polybar/scripts
