@@ -1,0 +1,4 @@
+linux:
+  installs: yay -S --noconfirm --needed xfce4-terminal
+  links:
+    Dracula.theme: ~/.local/share/xfce4/terminal/colorschemes/Dracula.theme
