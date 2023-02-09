@@ -1,0 +1,9 @@
+linux:
+  installs: yay -S --noconfirm --needed i3
+  links:
+    config: ~/.config/i3/config
+  depends:
+    - flameshot
+    - xfce4-terminal
+    - i3lock-fancy
+    - dmenu
