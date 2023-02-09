@@ -1,2 +1,4 @@
 linux:
   installs: yay -S --noconfirm --needed micro
+  links:
+    dracula.micro: ~/.config/micro/colorschemes/dracula.micro
