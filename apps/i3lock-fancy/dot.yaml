@@ -1,0 +1,2 @@
+linux:
+  installs: yay -S --noconfirm --needed i3lock-fancy-git
