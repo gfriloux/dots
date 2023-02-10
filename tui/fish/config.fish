@@ -3,7 +3,6 @@ export EDITOR=micro
 export VISUAL=micro
 export GPG_TTY=(tty)
 
-
 contains /home/$USER/.local/bin $PATH; or set -x PATH "/home/$USER/.local/bin" $PATH
 contains /home/$USER/.local/share/bin $PATH; or set -x PATH "/home/$USER/.local/share/bin" $PATH
 contains /home/$USER/.cargo/bin $PATH; or set -x PATH "/home/kuri/.cargo/bin" $PATH
