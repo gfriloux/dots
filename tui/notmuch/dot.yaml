@@ -1,5 +1,2 @@
 linux:
   installs: yay -S --noconfirm --needed notmuch
-  links:
-    glow.yml: ~/.config/glow/glow.yml
-    dracula.json: ~/.config/glow/dracula.json
