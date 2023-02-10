@@ -1,0 +1,11 @@
+linux:
+  installs: yay -S --noconfirm --needed neomutt
+  links:
+    muttrc: ~/.config/mutt/muttrc
+    keys: ~/.config/mutt/keys
+    mailcap: ~/.config/mutt/mailcap
+    dracula-nerds.muttrc: ~/.config/mutt/themes/dracula-nerds.muttrc
+    gpg.rc: ~/.config/mutt/gpg.rc
+  depends:
+    - neovim
+    - notmuch
