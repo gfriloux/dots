@@ -1,0 +1,7 @@
+setxkbmap fr
+
+eval $(gnome-keyring-daemon --start)
+export SSH_AUTH_SOCK
+systemctl --user import-environment DISPLAY
+
+exec i3
