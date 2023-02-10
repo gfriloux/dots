@@ -1,0 +1,7 @@
+linux:
+  links:
+    sshtui.fish: ~/.config/fish/functions/sshtui.fish
+  depends:
+    - bat
+    - fzf
+    - fish
