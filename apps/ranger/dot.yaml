@@ -1,0 +1,5 @@
+linux:
+  installs: yay -S --noconfirm --needed ranger
+  links:
+    rc.conf: ~/.config/ranger/rc.conf
+    dracula.py: ~/.config/ranger/colorschemes/dracula.py
