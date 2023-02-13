@@ -45,8 +45,8 @@ color status red color8 ''                              # Pending delete icon
 # Index Colors   --------------------------------------------------------------------
 #color index color15 default '~N'                # new messages
 color index color5 default '~N'                # new messages
-color index color8 default '~R'                 # read messages
-color index color8 default '~Q'                 # messages which have been replied to
+color index default default '~R'                 # read messages
+color index color2 default '~Q'                 # messages which have been replied to
 color index_collapsed color4 default            # collapsed thread (message count text)
 #color index color5 default '!~Q^~p'             # sent only to me and haven't been replied to
 color index color22 default '~h X-Label..'     # messages with a complete label
@@ -60,7 +60,7 @@ color index color3 default '~T'                 # tagged messages
 color index color3 default '~T~N'               # tagged messages (new)
 color index color11 default '~T~R'              # tagged messages (read)
 color tree  color8 default                       # thread tree lines/arrow
-color indicator default color2                  # selection indicator
+color indicator default color8                  # selection indicator
 color index_date color8 default                 # date is always the same colour
 color index_label color6 default                # label is always the same colour
 
