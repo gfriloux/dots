@@ -43,11 +43,12 @@ color status red color8 ''                              # Pending delete icon
 
 
 # Index Colors   --------------------------------------------------------------------
-color index color15 default '~N'                # new messages
+#color index color15 default '~N'                # new messages
+color index color5 default '~N'                # new messages
 color index color8 default '~R'                 # read messages
 color index color8 default '~Q'                 # messages which have been replied to
 color index_collapsed color4 default            # collapsed thread (message count text)
-color index color5 default '!~Q^~p'             # sent only to me and haven't been replied to
+#color index color5 default '!~Q^~p'             # sent only to me and haven't been replied to
 color index color22 default '~h X-Label..'     # messages with a complete label
 color index color6 default '~F'                 # flagged messages
 color index color6 default '~F~N'               # flagged messages (new)
