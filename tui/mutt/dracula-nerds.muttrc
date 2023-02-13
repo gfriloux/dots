@@ -26,15 +26,16 @@ color search black color10                              # search highlight
 
 
 # Statusbar Colors   ----------------------------------------------------------------
-color status color141 default
-color status color7 color8 '([a-zA-Z0-9\.,]|\[|\])(\s)'  # bubble content 1
-color status color7 color8 '(\s)([a-zA-Z0-9\.,]|\[|\])'  # bubble content 2
+color status color7 default
+color status color7 color8 '[^]
+color status color7 color8 '([a-zA-Z0-9\.,]|\[|\])'  # bubble content 1
 color status color7 color8 '(\% )'                       # % symbol
-color status color7 color8 '(\S)'                        # empty spaces
-color status color8 default ''
-color status color8 default ''                      # statusline "bubbles"
-color status color69 black '(\` )'                      # bubble account variation
-color status white color69 '([a-zA-Z0-9\.]+)( )'         # account text
+#color status color7 color8 '(\S)'                        # empty spaces
+color status color8 default '(|)'
+color status color8 default ' '
+color status color8 default ' '
+color status color8 default '(\` )'                      # bubble account variation
+#color status color7 color161 '([a-zA-Z0-9\.]+)( )'         # account text
 color status green color8 ''                            # Unread messages count
 color status blue color8 ''                             # Read messages count icon
 color status yellow color8 ''                           # Flagged icon
