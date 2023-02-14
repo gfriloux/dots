@@ -71,7 +71,7 @@ alternative_order text/calendar application/ics text/enriched text/html text/pla
 set sidebar_folder_indent = yes
 set sidebar_indent_string = ' - '
 set sidebar_non_empty_mailbox_only = no
-set sidebar_visible = yes
+set sidebar_visible = no
 set sidebar_width   = 50
 set sidebar_next_new_wrap = yes
 set sidebar_short_path = yes
@@ -81,7 +81,7 @@ set sidebar_component_depth = 0
 set use_threads=reverse
 set sort='last-date'
 set collapse_all = yes
-set uncollapse_new = no
+set uncollapse_new = yes
 set thread_received = yes
 set narrow_tree=no
 
