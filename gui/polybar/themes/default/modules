@@ -458,7 +458,7 @@ interval = 600
 
 [module/mails]
 type = custom/script 
-exec = notmuch count tag +unread
+exec = notmuch count tag:unread
 interval = 10
 format = <label>
 format-prefix = 
