@@ -56,12 +56,10 @@ bind index,pager,attach,browser,query,alias,compose q exit
 bind index t tag-entry
 bind index T tag-thread
 bind index <space> flag-message 
-bind index u undelete-message
 bind index U undelete-thread
 macro index D ";:set resolve=no<enter><clear-flag>!<save-message>=Archive<enter><enter><sync-mailbox><enter><enter-command>echo 'Message deleted'<enter>:set resolve=yes<enter>" "Quick Delete"
 macro index A ";:set resolve=no<enter><clear-flag>!<save-message>=Archive<enter><enter><sync-mailbox><enter><enter-command>echo 'Message archived'<enter>:set resolve=yes<enter>" "Quick Archive"
 
-bind index,pager d delete-message
 bind index,pager L edit-label
 
 # Compose, Replies and Forwarding
@@ -105,3 +103,6 @@ macro index A "<tag-pattern>~N<enter><tag-prefix><clear-flag>N<untag-pattern>.<e
 macro attach,compose \cl "<pipe-entry> urlscan -d -w 80<Enter>" "call urlscan to extract URLs out of a message"
 
 set abort_key = "<Esc>"
+
+macro index d "<delete-message><modify-tags-then-hide>+deleted<enter>"
+macro index u "<undelete-messsage><modify-tags-then-hide>-deleted<enter>"
