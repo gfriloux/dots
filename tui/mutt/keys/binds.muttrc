@@ -1,8 +1,6 @@
 # General Navigation
 bind index <Left> collapse-thread
 bind index <Right> collapse-thread
-bind index h collapse-thread
-bind index l collapse-thread
 bind index + link-threads
 bind index zz current-middle
 bind index zt current-top
@@ -18,16 +16,11 @@ bind attach <return> view-mailcap
 bind browser gg top-page
 bind browser G bottom-page
 
-bind pager j next-line
-bind pager k previous-line
 bind pager <Down> next-line
 bind pager <Up> previous-line
 bind pager G bottom
 bind pager gg top
-macro pager J "<next-entry>\n<skip-headers>\n"
-macro pager K "<previous-entry>\n<skip-headers>\n"
 
-#bind index,pager f change-folder
 macro index f "<change-vfolder>?" "Change to vfolder overview"
 bind index,pager \Cu half-up
 bind index,pager \Cd half-down
@@ -57,8 +50,6 @@ bind index t tag-entry
 bind index T tag-thread
 bind index <space> flag-message 
 bind index U undelete-thread
-macro index D ";:set resolve=no<enter><clear-flag>!<save-message>=Archive<enter><enter><sync-mailbox><enter><enter-command>echo 'Message deleted'<enter>:set resolve=yes<enter>" "Quick Delete"
-macro index A ";:set resolve=no<enter><clear-flag>!<save-message>=Archive<enter><enter><sync-mailbox><enter><enter-command>echo 'Message archived'<enter>:set resolve=yes<enter>" "Quick Archive"
 
 bind index,pager L edit-label
 
@@ -104,5 +95,8 @@ macro attach,compose \cl "<pipe-entry> urlscan -d -w 80<Enter>" "call urlscan to
 
 set abort_key = "<Esc>"
 
-macro index d "<delete-message><modify-tags-then-hide>+deleted<enter>"
-macro index u "<undelete-messsage><modify-tags-then-hide>-deleted<enter>"
+# notmuch bindings
+macro index ? "<vfolder-from-query>"              # looks up a hand made query
+macro index A "<modify-labels>+archive -unread -inbox<enter>"        # tag as Archived
+macro index I "<modify-labels>-inbox -unread<enter>"                 # removed from inbox
+macro index S "<modify-labels-then-hide>-inbox -unread +junk<enter>" # tag as Junk mail
