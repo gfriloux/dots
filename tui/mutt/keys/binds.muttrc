@@ -89,8 +89,6 @@ bind index,pager,attach,editor,compose <F5> refresh
 macro index,pager \cl '<pipe-message>urlscan -d -w 80<enter>' "call urlscan to open links"
 macro attach s '<save-entry><kill-line>~/Downloads/<enter>a' "Save file to ~/Downloads"
 macro browser h '<change-dir><kill-line>..<enter>' "Go to parent folder"
-#macro index \Ca "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
-macro index A "<tag-pattern>~N<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all new as read"
 macro attach,compose \cl "<pipe-entry> urlscan -d -w 80<Enter>" "call urlscan to extract URLs out of a message"
 
 set abort_key = "<Esc>"
